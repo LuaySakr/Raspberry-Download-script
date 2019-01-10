@@ -15,7 +15,7 @@
 while [ true ]
 do
 
-    youtube-dl -r 50K -f  bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best \
+    youtube-dl -i -r 100K -f  bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best \
 -o "/run/user/1000/gvfs/smb-share:server=personalcloud-2.local,share=public/Data/MediaLibrary/Raspberry/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" \
    "https://www.youtube.com/user/checkgate"
 done
